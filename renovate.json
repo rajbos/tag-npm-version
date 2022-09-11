@@ -1,7 +1,7 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": ["github>AHDCreative/renovate-config"],
-  "ignorePresets": ["github>AHDCreative/renovate-config:schedule"],
+  "extends": ["github>ahdcreative/renovate-config"],
+  "ignorePresets": ["github>ahdcrestive/renovate-config:schedule"],
   "packageRules": [
     {
       "matchDepTypes": ["devDependencies"],

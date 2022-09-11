@@ -1,0 +1,20 @@
+name: TAG NPM Version to Github Version
+branding:
+  icon: activity
+  color: red
+description: Create a new Git tag whenever a new Version it's published on NPM.
+inputs:
+  git-user-email: Git user.email to use
+  default: 41898282+github-actions[bot]@users.noreply.github.com
+  git-user-name: Git user.name
+  default: github-actions[bot]
+  tag-prefix: Prefix to prepend the the version in package.json
+  default: v
+runs:
+  using: docker
+  image: Dockerfile
+  args:
+    - ${{ inputs.git-user-name }}
+    - ${{ inputs.git-user-email }}
+    - ${{ inputs.tag-prefix }}
+

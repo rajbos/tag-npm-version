@@ -1,4 +1,4 @@
-FROM node:16-bullseye-slim@sha256:18ae6567b623f8c1caada3fefcc8746f8e84ad5c832abd909e129f6b13df25b4
+FROM node:16-bullseye-slim@sha256:59812c19504546fc66b0b26722bf0754ee48b74f9abc5ed9c3f251fc45d86099
 WORKDIR /action
 RUN apt-get install -y jq
 COPY enrtypoint.sh /entrypoint.sh
